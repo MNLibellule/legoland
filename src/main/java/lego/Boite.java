@@ -1,11 +1,11 @@
 package lego;
 
-public class BoiteLego {
+public class Boite {
 	private int number;
 	private String name;
 	
 	
-	public BoiteLego(int number, String name) {
+	public Boite(int number, String name) {
 		super();
 		this.number = number;
 		this.name = name;
