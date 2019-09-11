@@ -3,7 +3,7 @@ package lego.test;
 import static org.junit.Jupiter.api.Assertions.*;
 
 
-public class TestTheme {
+class TestTheme {
 
 	@Test
 	public void test() {
