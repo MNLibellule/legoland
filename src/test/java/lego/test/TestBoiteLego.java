@@ -22,5 +22,15 @@ class TestBoiteLego {
 				() -> assertEquals(name, boite.getName(), "name")
 		);
 	}
+	
+	@Test
+	void testConstructor1() {
+		// given
+		var figurines = 4;
+		// when
+		var boite = new Boite(figurines);
+		// then
+		assertAll(
+				() -> assertEquals(figurines, boite.getFigurines(), "figurines"),
 
 }
