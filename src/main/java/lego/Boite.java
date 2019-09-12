@@ -12,6 +12,14 @@ public class Boite {
 		this.number = number;
 		this.name = name;
 	}
+	
+	public Boite(int number, String name, int pieces, int figurines) {
+		super();
+		this.number = number;
+		this.name = name;
+		this.pieces = pieces;
+		this.figurines = figurines;
+	}
 
 
 	public int getNumber() {
@@ -34,13 +42,7 @@ public class Boite {
 	}
 
 
-	public Boite(int number, String name, int pieces, int figurines) {
-		super();
-		this.number = number;
-		this.name = name;
-		this.pieces = pieces;
-		this.figurines = figurines;
-	}
+
 
 
 	public int getPieces() {

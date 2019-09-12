@@ -26,14 +26,18 @@ class TestBoiteLego {
 	@Test
 	void testConstructor1() {
 		// given
+		var number =21318;
+		var name = "La cabane dans l'arbre";
 		var figurines = 4;
 		var pieces = 3036;
 		// when
-		var boite = new Boite(figurines, pieces);
+		var boite = new Boite(number, name, figurines, pieces);
 		// then
 		assertAll(
+				() -> assertEquals(number, boite.getNumber(), "number"),
+				() -> assertEquals(name, boite.getName(), "name"),
 				() -> assertEquals(figurines, boite.getFigurines(),"figurines"),
 				() -> assertEquals(pieces, boite.getPieces(), "pieces")
 		);
-
+	}
 }
