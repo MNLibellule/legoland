@@ -76,5 +76,5 @@ public class Boite {
 	public void setPrice(int price) {
 		this.price = price;
 	}		
-	lknqflksalqkjfclkqjflkvdjlk
+	
 }
