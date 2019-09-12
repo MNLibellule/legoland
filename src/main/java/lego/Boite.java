@@ -5,6 +5,7 @@ public class Boite {
 	private String name;
 	private int pieces;
 	private int figurines;
+	private int price;
 
 	
 	public Boite(int number, String name) {
@@ -20,7 +21,12 @@ public class Boite {
 		this.pieces = pieces;
 		this.figurines = figurines;
 	}
-
+	
+	public Boite(String name, int price) {
+		super();
+		this.name = name;
+		this.price = price;
+	}
 
 	public int getNumber() {
 		return number;
@@ -42,9 +48,6 @@ public class Boite {
 	}
 
 
-
-
-
 	public int getPieces() {
 		return pieces;
 	}
@@ -56,7 +59,6 @@ public class Boite {
 	}	
 	
 
-
 	public int getFigurines() {
 		return figurines;
 	}
@@ -65,8 +67,14 @@ public class Boite {
 	public void setFigurines(int figurines) {
 		this.figurines = figurines;
 
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
 	}		
-	
-	
 	
 }
