@@ -27,10 +27,13 @@ class TestBoiteLego {
 	void testConstructor1() {
 		// given
 		var figurines = 4;
+		var pieces = 3036;
 		// when
-		var boite = new Boite(figurines);
+		var boite = new Boite(figurines, pieces);
 		// then
 		assertAll(
-				() -> assertEquals(figurines, boite.getFigurines(), "figurines"),
+				() -> assertEquals(figurines, boite.getFigurines(),"figurines"),
+				() -> assertEquals(pieces, boite.getPieces(), "pieces")
+		);
 
 }

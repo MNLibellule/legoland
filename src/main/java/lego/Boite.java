@@ -51,7 +51,7 @@ public class Boite {
 	public void setPieces(int pieces) {
 		this.pieces = pieces;
 
-	
+	}	
 	
 
 
