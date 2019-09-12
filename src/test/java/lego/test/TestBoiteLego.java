@@ -50,7 +50,8 @@ class TestBoiteLego {
 		var boite = new Boite(price, name);
 		// then
 		assertAll(
-				() -> assertEquals(number, boite.getNumber(), "price"),
+				() -> assertEquals(price, boite.getPrice(), "price"),
 				() -> assertEquals(name, boite.getName(), "name")
 		);
+}
 }
