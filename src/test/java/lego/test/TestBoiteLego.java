@@ -44,7 +44,7 @@ class TestBoiteLego {
 	@Test
 	void testConstructor2() {
 		// given
-		var price = 199.99;
+		var price = 200;
 		var name = "La cabane dans l'arbre";
 		// when
 		var boite = new Boite(price, name);
