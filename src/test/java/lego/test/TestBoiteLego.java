@@ -40,4 +40,17 @@ class TestBoiteLego {
 				() -> assertEquals(pieces, boite.getPieces(), "pieces")
 		);
 	}
+	
+	@Test
+	void testConstructor2() {
+		// given
+		var price = 199.99;
+		var name = "La cabane dans l'arbre";
+		// when
+		var boite = new Boite(price, name);
+		// then
+		assertAll(
+				() -> assertEquals(number, boite.getNumber(), "price"),
+				() -> assertEquals(name, boite.getName(), "name")
+		);
 }
